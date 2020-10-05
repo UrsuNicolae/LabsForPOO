@@ -1,4 +1,4 @@
-package Lab2.Ex1;
+package Lab2.Ex1_3;
 
 import java.util.WeakHashMap;
 

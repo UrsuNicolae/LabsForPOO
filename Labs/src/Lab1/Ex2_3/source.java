@@ -1,4 +1,4 @@
-package Lab1.Ex2;
+package Lab1.Ex2_3;
 import java.util.LinkedList;
 import java.util.List;
 
