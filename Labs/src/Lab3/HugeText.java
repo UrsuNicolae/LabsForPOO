@@ -43,6 +43,26 @@ public class HugeText {
         PrintTop5Words(sortedWordFrequencies);
     }
 
+    public String GetLongestWord() {
+        String longestWord = "";
+        String word = "";
+        for(int i = 0; i < Text.length(); i++){
+            char letter = Text.charAt(i);
+            if((letter >= 'A' && letter <= 'Z') || (letter >= 'a' && letter <= 'z')) {
+                word += letter;
+            }
+            else
+            {
+                if(word != ""){
+                    if(word.length() >  longestWord.length())
+                        longestWord = word;
+                    word = "";
+                }
+            }
+        }
+        return longestWord;
+    }
+
     private <K, V>void PrintTop5Words(Map<K, V> sortedMap){
         int nrOfWords = sortedMap.size();
         int index = 0;
