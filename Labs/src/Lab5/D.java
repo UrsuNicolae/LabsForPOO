@@ -2,19 +2,15 @@ package Lab5;
 
 public class D extends C {
     protected String d;
-
-    public X x = new X("dx");
-
-    D(){
-        d ="";
-    }
-
+    protected X x;
     D(String d){
+        super("D-CCC");
         this.d = d;
+        this.x = new X("D's X");
     }
-
-    public void print() {
-        System.out.println("Class D");
-        System.out.println(this.d);
+    void print(){
+        super.print();
+        System.out.println("D " + this.d);
+        x.print();
     }
 }

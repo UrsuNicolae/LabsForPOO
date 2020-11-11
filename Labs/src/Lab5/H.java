@@ -2,19 +2,13 @@ package Lab5;
 
 public class H extends G{
     protected String h;
-
-    private X x = new X("hX");
-
-    H(){
-        h = "";
-    }
-
-    H(String h) {
+    H(String h){
+        super("H-GGG");
         this.h = h;
     }
-
-    public void print() {
-        System.out.println("Class H");
-        System.out.println(this.h);
+    void print(){
+        super.print();
+        System.out.println("H " + this.h);
+        x.print();
     }
 }

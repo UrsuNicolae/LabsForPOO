@@ -1,17 +1,13 @@
 package Lab5;
 
 public class X {
-    private String x;
-
-    X() {
-        this.x = "";
-    }
-
-    X(String x) {
+    protected String x;
+    X(String x){
+        //super(x);
         this.x = x;
     }
-
-    public String getX() {
-        return x;
+    void print(){
+        //System.out.println("X ");
+        System.out.println(this.x);
     }
 }

@@ -2,20 +2,20 @@ package Lab5;
 
 public class A {
     protected String a;
-
-    protected  X x = new X("aX");
-
+    protected X x;
     A(){
-        a = "";
+        this.a = "";
     }
-
-    A(String a) {
+    A(String a){
         this.a = a;
+        this.x = new X("A's X");
     }
-
-    public void print() {
-        System.out.println("Class A");
-        System.out.println(this.a);
-        System.out.println(this.x.getX());
+    A(String a, X x){
+        this.a = a;
+        this.x = x;
+    }
+    void print(){
+        System.out.println("A " + this.a);
+        x.print();
     }
 }

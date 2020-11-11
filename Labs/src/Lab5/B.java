@@ -2,17 +2,13 @@ package Lab5;
 
 public class B extends A{
     protected String b;
-
-    B(){
-        b= "";
-    }
-
     B(String b){
+        super("B-AAA");
         this.b = b;
     }
-
-    public void print() {
-        System.out.println("Class B");
-        System.out.println(this.b);
+    void print(){
+        super.print();
+        System.out.println("B " + this.b);
+        x.print();
     }
 }
