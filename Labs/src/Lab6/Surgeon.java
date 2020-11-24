@@ -1,2 +1,4 @@
-package Lab6;public class Surgeon {
+package Lab6;
+
+public class Surgeon extends Doctor {
 }

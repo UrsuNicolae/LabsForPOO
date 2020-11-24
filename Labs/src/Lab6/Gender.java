@@ -1,2 +1,6 @@
-package Lab6;public class Gender {
+package Lab6;
+
+public enum  Gender {
+    Female,
+    Male
 }

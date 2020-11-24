@@ -1,2 +1,8 @@
-package Lab6;public class Departament {
+package Lab6;
+
+import java.util.ArrayList;
+
+public class Departament {
+    public Hospital hospital;
+    public ArrayList<Staff> staffList;
 }
